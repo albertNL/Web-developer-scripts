@@ -1,0 +1,36 @@
+ul {
+	font: 0.9em "Verdana", sans-serif;
+}
+
+h1 {
+	font: 2em "Verdana", sans-serif;
+}
+
+a:link {
+	color: black;
+	font-weight: none;
+}
+
+a:visited {
+	color: black;
+	font-weight: none;
+}
+
+a:hover {
+	font-weight: bold;
+}
+
+label {
+	display: block;
+	margin: 5px 0;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+td, th {
+	padding: 5px;
+	border-bottom: 1px solid #aaa;
+}
