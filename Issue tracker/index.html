@@ -1,0 +1,55 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Issues</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	</head>
+	<body onload="fetchIssues()">
+		<div class="container">
+			<h1>Simplified issue tracker</h1>
+			<div class="jumbotron">
+				<h3>Add issues</h3>
+				<br>
+				Please fill in the form below to report issues. If the issue is solved set the status to <strong>Closed</strong>. If the issue does not need to be archived anymore it can be <strong>deleted</strong>.
+				<br><br>
+				<form id="issueInputForm">
+					<div class="form-group">
+						<label for="issueDescInput">Description of issue</label>
+						<input type="text" class="form-control" id="issueDescInput" placeholder="describe the issue...">
+					</div>
+					<div class="form-group">
+						<label for="issueDateInput">Date of issue</label>
+						<input type="text" class="form-control" id="issueDateInput" placeholder="When did the issue occur...">
+					</div>
+					<div class="form-group">
+						<label for="issueRiskInput">Risk of issue</label>
+						<select id="issueRiskInput" class="form-control">
+							<option value="Low">0 - None</option>
+							<option value="Low">1 - Low risk</option>
+							<option value="Medium">2 - Medium risk</option>
+							<option value="High">3 - High risk</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label for="issueAssignedToInput">To who is the issue assigned to?</label>
+						<input type="text" class="form-control" id="issueAssignedToInput" placeholder="Enter responsible person(s)...">
+					</div>
+					<button type="submit" class="btn btn-primary">Add issue to tracker</button>
+				</form>
+			</div>
+			<div class="col-lg-12">
+				<div id="issuesList">
+					
+				</div>
+			</div>
+			<div class="footer">
+				<p>&copy Albert 2018</p>
+			</div>
+		</div>
+
+		<script src="chance.js"></script>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<script src="app.js"></script>
+	</body>
+</html>
